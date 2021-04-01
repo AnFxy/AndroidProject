@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--时间-->
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:typeface="monospace"
+        android:textColor="#999999"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+    <!--左侧布局-->
+    <!--消息，消息框，头像-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/linear_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal">
+            <com.ilikexy.bigwork.zidingyi.RoundedSquare
+                android:id="@+id/imag_left"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="10sp"/>
+            <TextView
+                android:id="@+id/text_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="monospace"
+                android:textColor="#000000"
+                android:maxWidth="200sp"
+                android:gravity="top"
+                android:textSize="15sp"
+                android:paddingLeft="15sp"
+                android:layout_marginLeft="5sp"
+                android:background="@drawable/left"/>
+            />
+            <View
+                android:layout_width="150sp"
+                android:layout_height="40sp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8sp"/>
+    </LinearLayout>
+
+
+
+    <!--右侧布局-->
+    <!--消息，消息框，头像-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/linear_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            >
+            <View
+                android:layout_width="150sp"
+                android:layout_height="40sp"/>
+            <TextView
+                android:id="@+id/text_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="monospace"
+                android:textColor="#000000"
+                android:background="@drawable/right"
+                android:gravity="top"
+                android:paddingLeft="15sp"
+                android:textSize="15sp"/>
+            <com.ilikexy.bigwork.zidingyi.RoundedSquare
+                android:id="@+id/imag_right"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_gravity="top"
+                android:layout_marginRight="10sp"
+                android:layout_marginLeft="10sp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8sp"/>
+    </LinearLayout>
+
+</LinearLayout>

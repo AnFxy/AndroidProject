@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--标题栏-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#dddddd"
+        android:layout_height="50sp">
+        <TextView
+            android:layout_weight="2.5"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="方信"
+            android:typeface="monospace"
+            android:textColor="#000000"
+            android:padding="8sp"
+            android:gravity="center_vertical"
+            android:textSize="21sp"/>
+        <ImageView
+            android:id="@+id/imag_nofun_messfragment"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:src="@drawable/sousuo1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <!--消息列表-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_message_fragement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

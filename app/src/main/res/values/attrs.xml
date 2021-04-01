@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--王者营地-->
+    <declare-styleable name="WangZheLoad">
+        <attr name="leftSmallRectColor" format="color"></attr>
+        <attr name="rightSmallRectColor" format="color"></attr>
+        <attr name="smallRectSize" format="dimension"></attr>
+        <attr name="bigRectSize" format="dimension"></attr>
+        <attr name="bigRectColor" format="color"></attr>
+    </declare-styleable>
+    <!--圆角方形图片-->
+    <declare-styleable name="RoundedSquare">
+        <attr name="roundedRadius" format="dimension"></attr>
+    </declare-styleable>
+</resources>

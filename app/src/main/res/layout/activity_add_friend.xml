@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".AddFriendActivity"
+    android:background="#ededed">
+
+    <!--搜索栏-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50sp">
+        <!--取消-->
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/text_back_addfriend"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:background="@drawable/back"
+            android:paddingLeft="4sp"
+            android:typeface="monospace"
+
+            android:gravity="center"
+            android:textSize="16sp"/>
+        <LinearLayout
+            android:layout_weight="6"
+            android:layout_width="0sp"
+            android:background="@drawable/sousuo123"
+            android:layout_height="match_parent">
+            <View
+                android:layout_weight="1"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"/>
+            <EditText
+                android:id="@+id/eidt_sousuo_dataactivity"
+                android:layout_weight="7"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:hint="方信号"
+                android:textCursorDrawable="@drawable/cursorcolor"
+                android:typeface="monospace"
+                android:background="@null"
+                android:textColor="#000000"
+                android:gravity="center_vertical"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <!--搜索-->
+        <TextView
+            android:id="@+id/text_sousuo_addfriend"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:text="搜索"
+            android:paddingRight="4sp"
+            android:typeface="monospace"
+            android:textColor="#586b95"
+            android:gravity="center"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    <!--可添加好友如下-->
+    <TextView
+        android:text="▼ 可添加好友如下 ▼"
+        android:layout_width="match_parent"
+        android:layout_height="25sp"
+        android:typeface="monospace"
+        android:textColor="#586b95"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:textSize="16sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="#666666"
+        android:layout_height="0.2sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20sp"/>
+    <!--从数据库传来的数据显示如下-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="0sp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_content_addfriend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"/>
+    </ScrollView>
+
+</LinearLayout>
